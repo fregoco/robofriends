@@ -5,6 +5,7 @@ import Card from './Card.js'
 const CardList = ({robots}) => { 
 	const robotsArray = robots.map((user, i) =>  <Card key = {i} id={user.id} name={user.name} email={user.email} />);
 
+	throw new Error("Something went wrong!!!!!!!!!!")
 	return (
 		<div>
 			{robotsArray}
